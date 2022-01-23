@@ -3,6 +3,7 @@ import Classes from "./Home.module.css";
 import Flex from "../Ui/Flex/Flex";
 import ForumImg from "../Assets/Forum.png";
 import Button from "../Ui/Button/Button";
+import { Link } from "react-router-dom";
 function Doubt() {
   return (
     <Flex className={Classes.Home_Section} style={{ flexWrap: "wrap-reverse" }}>
@@ -19,7 +20,9 @@ function Doubt() {
           can open any doubt regarding his stack with labels and offer some
           points on each doubt for the mentor.
         </p>
-        <Button>Doubt Forum</Button>
+        <Link to="/Forum">
+          <Button>Doubt Forum</Button>
+        </Link>
       </Flex>
     </Flex>
   );

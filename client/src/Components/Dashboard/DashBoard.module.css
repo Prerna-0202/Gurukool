@@ -23,3 +23,12 @@
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

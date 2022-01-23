@@ -13,13 +13,14 @@ function NewConversation(props) {
     if (handelSearch !== Input.current.value) {
       if (Input.current.value.trim() !== "") {
         handelSearch !== Input.current.value &&
-          Request("/User/Find/?Name=" + Input.current.value, "GET");
+          Request("/User/Find?Name=" + Input.current.value, "GET");
       }
       updateSearch(Input.current.value);
     }
   };
   useEffect(() => {
     if (Data.length !== 0) {
+      console.log(Data.User);
       updateResults(Data.User);
     }
   }, [Data]);

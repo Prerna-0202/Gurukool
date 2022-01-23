@@ -91,10 +91,19 @@ route.get("/LogOut", async (req, res) => {
 //handling the Account Deletion
 route.post("/delete", Verification, (req, res) => {});
 //finding the User with query
-route.get("/Find", Verification, async (req, res) => {
+route.get("/Find", async (req, res) => {
+  console.log("Hiii");
+  console.log(req.query);
   try {
     // query based on UserName--> find User with UserName and accordingly
-    if (req.query.UserName) {
+    if (req.query.Name) {
+      const User = await UserModel.find({ Name: req.query.Name });
+      res.status(200).json({
+        Status: "Success",
+        Message: "User Details are :",
+        User: User,
+      });
+    } else if (req.query.UserName) {
       const User = await UserModel.find({ UserName: req.query.UserName });
       res.status(200).json({
         Status: "Success",
@@ -114,6 +123,12 @@ route.get("/Find", Verification, async (req, res) => {
         Status: "Success",
         Message: "User Details are :",
         User: User,
+      });
+    } else {
+      res.status(500).json({
+        Status: "Error",
+        ErrorMessage: "Something went Wrong !!",
+        ServerError: error,
       });
     }
   } catch (error) {

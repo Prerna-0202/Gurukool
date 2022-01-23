@@ -87,6 +87,4 @@ To setup this project on your local System please follow these steps:
 
 @[Pulkit Gupta](https://github.com/pulkit-30)
 <br>
-@[Vaibhav Soni](https://github.com/Heikrana)
-<br>
-@[Sarthak Negi](https://github.com/Sarthaknegigit)
+@[Prerna Sharma](https://github.com/prerna-0202)

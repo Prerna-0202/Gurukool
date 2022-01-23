@@ -45,6 +45,11 @@ function Navbar() {
                 <i className="fas fa-check-double"></i>Doubt Forum
               </Item>
             </Link>
+            <Link to="/Roadmap" className="Link">
+              <Item onClick={ToggleHamBtn}>
+                <i className="far fa-map"></i>Roadmap
+              </Item>
+            </Link>
             {Auth.isUser && Auth.User !== null && (
               <React.Fragment>
                 <Link to="/Messenger" className="Link">

@@ -3,6 +3,7 @@ import Classes from "./Home.module.css";
 import MsgImg from "../Assets/Msg.png";
 import Flex from "../Ui/Flex/Flex";
 import Button from "../Ui/Button/Button";
+import { Link } from "react-router-dom";
 function Messenger() {
   return (
     <Flex className={Classes.Home_Section} style={{ flexWrap: "wrap-reverse" }}>
@@ -14,7 +15,9 @@ function Messenger() {
           talented student, So Mentee can message to his Mentor or Moderators
           and get the best guidance.
         </p>
-        <Button>Messenger</Button>
+        <Link to="/Messenger">
+          <Button>Messenger</Button>
+        </Link>
       </Flex>
     </Flex>
   );
