@@ -1,0 +1,24 @@
+{
+	"name": "hackathon",
+	"version": "1.0.0",
+	"description": "this is backend server for gurukool dream project",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+	},
+	"author": "decypher",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.0.12",
+		"multer": "^1.4.3",
+		"pusher": "^5.0.0",
+		"pusher-js": "^7.0.3",
+		"uuid": "^8.3.2"
+	}
+}
