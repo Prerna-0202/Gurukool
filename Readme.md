@@ -83,8 +83,4 @@ To setup this project on your local System please follow these steps:
 > > > Videos
 > > > Audio
 
-## Team
-
 @[Pulkit Gupta](https://github.com/pulkit-30)
-<br>
-@[Prerna Sharma](https://github.com/prerna-0202)
